@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - Bullet
+  - Enemy
+  - Patrol Boundry
   layers:
   - Default
   - TransparentFX
@@ -13,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Obstacle
+  - Rooms
+  - Enemies
   - 
   - 
   - 
@@ -38,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 1257291979
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
