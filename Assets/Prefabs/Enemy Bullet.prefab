@@ -121,7 +121,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   player: {fileID: 0}
   speed: 10
-  damage: -1
+  damage: 1
 --- !u!58 &-5824583605753575508
 CircleCollider2D:
   m_ObjectHideFlags: 0

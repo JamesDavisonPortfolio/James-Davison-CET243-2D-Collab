@@ -21,13 +21,13 @@ public class EnemyActivation : MonoBehaviour
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnEnable()
@@ -38,19 +38,22 @@ public class EnemyActivation : MonoBehaviour
 
     private void OnDisable()
     {
-        
+
     }
 
     public void TakeDamage(int damageValue, Vector2 knockbackDirection)
-    { 
+    {
 
-            health -= damageValue;
+        health -= damageValue;
 
-            rb.AddForce(knockbackDirection * knockBackForce);
+        rb.AddForce(knockbackDirection * knockBackForce);
 
-            if (health <= 0)
-            {
-                gameObject.SetActive(false);
-            }     
+        if (health <= 0)
+        {
+            
+            
+            gameObject.SetActive(false);
+
+        }
     }
 }

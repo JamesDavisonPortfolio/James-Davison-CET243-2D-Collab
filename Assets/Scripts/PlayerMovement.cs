@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        
 
         if (Input.GetKeyDown(KeyCode.W) && onGround)
         {

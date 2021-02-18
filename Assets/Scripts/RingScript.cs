@@ -9,6 +9,7 @@ public class RingScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Physics2D.IgnoreLayerCollision(11, 13);
             characterRing.SetActive(true);
             Destroy(gameObject);
         }

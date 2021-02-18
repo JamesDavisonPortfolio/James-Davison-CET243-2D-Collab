@@ -27,7 +27,11 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            health = maxHealth;
+            SetHealthBar();
+        }
     }
 
     public void TakeDamage(int damageValue, Vector2 knockbackDirection)
